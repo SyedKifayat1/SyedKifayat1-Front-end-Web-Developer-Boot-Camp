@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture No 5</title>
+    <style>
+        .bg-color{
+            background-color: #f00;
+        }
+        .bg-img{
+            /* background-image: url("./img.png"); */
+            /* background-size: cover; */
+            background: #f00 url("./img.png") no-repeat left top / 100%;
+        
+            width: 250;
+            height: 550px;
+            /* background-repeat:repeat ;
+            background-position: right top;
+            background-attachment: scroll; */
+        }
+        .border{
+            padding: 5px;
+            margin: 100px 10px;
+            width: 960px;
+            border-width: 5px;
+            /* border-style: dotted; */
+            /* border-style: groove; */
+            /* border-top-style: dashed;
+            border-right-style: double;
+            border-bottom-style:dotted;
+            border-left-style: none; */
+            /* border-style: dashed groove dotted none; */ /* top, right, bottom, left */
+            /* border-style: dashed groove dotted; top , {right, left} , bottom */
+            border-style: solid;
+            border-color: #000;
+            border-radius: 15px;
+            
+        }
+        .border-2{
+            max-width: 960px;
+            padding: 5px;
+            margin: 100px;
+            margin-left: inherit;
+            
+            /* border-style: dotted; */
+            /* border-style: solid; */
+            /* border-width: 5px;
+            border-style: double;
+            border-color: #000; */
+            border: double #000;
+            border-width: 5px 10px 15px 20px; /* top right bottom left */
+            
+        }
+        .button{
+            width: 150px;
+            /* margin:20px; */
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(49, 97, 139);
+            height: 40px;
+            border-radius: 25px;
+            color: #fff;
+        }
+
+        h1{
+            margin:0 0 100px 0;
+        }
+        h2{
+            margin:150px 0 0 0;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bg-color">
+        <h1>Heading</h1>
+    </div>
+
+    <div class="bg-img">
+         <h1>this is image </h1>
+    </div>
+    <div class="border">
+        <h1>Border 1</h1>
+    </div>
+    <div class="button">Click Me</div>
+    <div class=" border-2">
+        <h1>Border 2</h1>
+        <h2>this is h2</h2>
+    </div>
+
+   
+    
+</body>
+</html>

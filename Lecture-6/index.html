@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        h2{
+            /* background-color: gray; */
+            color: white;
+            padding: 5px;
+            text-align: center;
+            text-shadow:2px 2px 5px red, 0 0 25px blue, 0 0 30px rgb(0, 255, 102);
+        }
+        .font-family{
+            /* font-family:cursive; */
+            font-variant: small-caps;
+        }
+        p{
+            white-space: nowrap;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 2vw;
+            /* font-size: 24px; */
+            /* border: 1px solid red; */
+            /* outline: 10px solid gold ; */
+        }
+        .dotted{
+            outline-style: dotted;
+            outline-color: blue;
+            outline-width: thick;
+        }
+        .dashes{
+            outline-style: dashed;
+            outline-color:green;
+            outline-width: thin;
+
+        }
+        .solid{
+            outline: solid;
+            outline-color:gray;
+            outline-width: 5px;
+
+        }
+        .groove{
+            outline-style: groove;
+            outline-color:brown;
+            outline-width:.22rem ;
+            outline-offset: 5px;
+
+        }
+        .inset{
+            outline-style: inset;
+            outline-color:darkcyan;
+            outline-width:.2rem ;
+            outline-offset: 5px;
+
+        }
+
+        .align{
+            font-size: large;
+            /* text-align: left; */
+            /* text-align: center; */
+            /* text-align: right; */
+            /* text-align: justify; */
+            text-align: start;
+            /* direction: rtl; */
+            /* unicode-bidi: bidi-override; */
+            /* vertical-align: baseline; */
+            /* vertical-align: text-bottom; */
+            vertical-align:sub;
+
+            height: 100px;
+            padding: 5px;
+            /* text-decoration-line: overline underline;
+            text-decoration-color: red;
+            text-decoration-style: double;
+            text-decoration-thickness: 5px; */
+            text-decoration: overline underline red double 5px;
+            /* text-transform: capitalize; */
+            /* text-transform: uppercase; */
+            text-transform: lowercase;
+            letter-spacing: 20px;
+            word-spacing: 50px;
+            
+
+        }
+        .google-font{
+            font-family: "Playwrite RO", cursive;
+  font-optical-sizing: auto;
+  font-weight:5px;
+  font-style: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2 class="google-font">CSS Outline Property</h2>
+        <p class="dotted">this is dotted Outline</p>
+        <p class="dashes">this is dashes Outline</p>
+        <p class="solid">this is solid Outline</p>
+        <p class="groove">this is groove Outline</p>
+        <p class="inset">this is inset Outline </p>
+    </div>
+
+    <div>
+        <h2 class="font-family">CSS Alignment Property</h2>
+        <p class="align">
+            
+            this is an Alignment Property
+
+         </p>
+    </div>
+</body>
+</html>
