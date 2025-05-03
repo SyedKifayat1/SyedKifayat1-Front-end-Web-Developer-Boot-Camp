@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        .width {
+
+            border: 1px solid rgb(18, 96, 18);
+            width: 500px;
+            height: 200px;
+            margin: auto;
+            background-color: aqua;
+        }
+
+        .max-width {
+            border: 1px solid rgb(18, 96, 18);
+            max-width: 500px;
+            background-color: blue;
+            height: 200px;
+            margin: auto;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(19, 88, 19);
+            color: white;
+            border-radius: 15px;
+            gap: 20px;
+            position: sticky;
+            top: 0px;
+            width: 100%;
+
+        }
+
+        .div {}
+
+        .div1 {
+            position: absolute;
+            background-color: aqua;
+            height: 100px;
+            width: 150px;
+            z-index: 1;
+
+        }
+
+        .div2 {
+            position: absolute;
+            left: 50px;
+            background-color: rgb(255, 0, 106);
+            height: 100px;
+            width: 150px;
+            z-index: 2;
+
+        }
+
+        .div3 {
+            position: absolute;
+            left: 100px;
+            top: 30px;
+            background-color: rgb(27, 29, 29);
+            height: 100px;
+            width: 150px;
+            color: white;
+            z-index: 3;
+
+        }
+
+        .overflow {
+            border: 2px solid gold;
+            width: 200px;
+            height: 50px;
+            margin-top: 200px;
+            overflow: auto;
+
+        }
+
+        p{
+            border: 1px solid rebeccapurple;
+        }
+        .float img {
+            float: left;
+        }
+        p::after{
+
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .p::after{
+
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .img{
+            width: 33.33%;
+            padding: 5px;
+            float: left;
+        }
+    </style>
+    <title>Lecture No 8 | Week No 6</title>
+</head>
+
+<body>
+
+    <ul class="nav">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Services</li>
+        <li>Portfolio</li>
+    </ul>
+    <div class="parent">
+        <div class="width"></div>
+        <br>
+        <div class="max-width"></div>
+    </div>
+
+    <div style="position: relative;">
+        <div class="div div1"> this is div1</div>
+        <div class="div div2"> this is div2 </div>
+        <div class="div div3"> this is div3</div>
+    </div>
+
+    <p class="overflow"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolore enim laborum natus alias
+        temporibus exercitationem voluptatibus, odio maxime, incidunt tenetur sed dolores accusamus necessitatibus ad
+        illo adipisci? Impedit, ducimus?</p>
+
+
+
+    <p class="float"><img src="./pic.jpg" width="300px" height="200px" alt=""> Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Unde dolore enim laborum natus alias
+        temporibus exercitationem voluptatibus, odio maxime, incidunt tenetur sed dolores accusamus necessitatibus ad
+        illo adipisci? Impedit, ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate
+        repellat sint iure vitae officiis perspiciatis rem accusantium ea. Corrupti nihil quidem, eligendi impedit
+        praesentium est a ullam veritatis id?</p>
+
+
+
+        <div class="p">
+            <img src="./pic.jpg" alt="" class="img">
+            <img src="./pic.jpg" alt="" class="img">
+            <img src="./pic.jpg" alt="" class="img">
+        </div>
+</body>
+
+
+
+
+</html>
