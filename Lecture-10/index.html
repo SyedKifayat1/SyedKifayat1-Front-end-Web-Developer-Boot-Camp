@@ -6,67 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        a[target]{
+        a[target] {
             color: white;
             background-color: rgb(109, 36, 36);
             text-decoration: none;
             padding: 5px 10px;
         }
-        a[target="_self"]{
+
+        a[target="_self"] {
             color: white;
             background-color: black;
             text-decoration: none;
             padding: 5px 10px;
         }
 
-        p[title~="fruits"]{
-            color: #fff;
-            background-color: black;
-            padding: 5px 10px;
-        }
-        p[class|="top"]{
+        p[title~="fruits"] {
             color: #fff;
             background-color: black;
             padding: 5px 10px;
         }
 
-        p[class^="bot"]{
+        p[class|="top"] {
             color: #fff;
             background-color: black;
             padding: 5px 10px;
         }
 
-        img[src $=".jpg"]{
+        p[class^="bot"] {
+            color: #fff;
+            background-color: black;
+            padding: 5px 10px;
+        }
+
+        img[src $=".jpg"] {
             transition: all ease 2s;
         }
 
-        img[src $=".jpg"]:hover{
+        img[src $=".jpg"]:hover {
             scale: 1.5;
 
         }
 
-        img[src *=".j"]{
+        img[src *=".j"] {
             transition: all ease-in 1s;
         }
 
-        img[src *=".j"]:hover{
+        img[src *=".j"]:hover {
             scale: 1.5;
 
         }
-
     </style>
 </head>
 
 <body>
-    <p>Lorem ipsum do harum, explicabo ullam fugit vitae in nostrum blanditiis eos enim aliquam incidunt consectetur placeat earum maiores corrupti distinctio atque!
+    <p>Lorem ipsum do harum, explicabo ullam fugit vitae in nostrum blanditiis eos enim aliquam incidunt consectetur
+        placeat earum maiores corrupti distinctio atque!
         <a href="" target="_blank">This is Target Blank </a>
         <a href="" target="_self">This is Target self</a>
 
-        <p title="flower and fruits">This is CSS [attribute~="value"] Selector</p>
-        <p title="fruits">This is CSS [attribute~="value"] Selector</p>
-        <p class="top">This is for [attribute|="value"] selector </p>
-        <p class="bottom">This is for CSS [attribute^="value"] Selector</p>
-        <img src="pic.jpg" alt="" height="80" width="150">
+    <p title="flower and fruits">This is CSS [attribute~="value"] Selector</p>
+    <p title="fruits">This is CSS [attribute~="value"] Selector</p>
+    <p class="top">This is for [attribute|="value"] selector </p>
+    <p class="bottom">This is for CSS [attribute^="value"] Selector</p>
+    <img src="pic.jpg" alt="" height="80" width="150">
     </p>
 </body>
 

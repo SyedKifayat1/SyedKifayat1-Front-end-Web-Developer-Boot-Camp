@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .form{
+            margin: 0 auto;
+            max-width: 720px;
+            padding: 20px;
+        }
+        form{
+            background-color: #ddd;
+            padding: 20px;
+            border-radius: 4px;
+        }
+       input[type = "text"],select{
+        width: 100%;
+        padding: 10px 15px;
+        display: inline-block;
+        margin: 10px 0px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+       }
+
+       input[name="search"]{
+        background-image: url('./download-1.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        background-size: 25px 30px;
+        font-size: 16px;
+       }
+       button{
+        padding: 12px 30px;
+        width: 100%;
+        color: white;
+        border-radius: 4px;
+        border: none;
+        background-color: rgb(15, 159, 61);
+       }
+
+       .search{
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+        background-color: #fff;
+        border-radius: 4px;
+        margin: 10px 0px;
+        font-size: 16px;
+        
+        
+       }
+
+       input[style]:focus{
+        border: none;
+        outline: none;
+       }
+    </style>
+</head>
+<body>
+
+    <div class="form">
+        <form action="">
+          <input type="text" name="search">
+          <div class="search">
+            <img src="./download-1.png" alt="" style="width: 20px; height:20px; padding-left:10px;">
+            <input type="text" style="border:none; font-size: 16px; margin:2px 0px;">
+          </div>
+          <label for="first-name">Frist Name</label>
+          <input type="text" id="first-name" name="first-name">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name">
+          <label for="country">Country</label>
+
+         
+          <select>
+            <option value="usa">USA</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="india">India</option>
+            <option value="afghanistan">Afghanistan</option>
+            <option value="chiana">Chiana</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

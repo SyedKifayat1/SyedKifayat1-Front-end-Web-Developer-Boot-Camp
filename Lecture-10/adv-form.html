@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .form {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        form{
+            background-color: #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+          }
+          input[type=submit]:hover {
+            background-color: #45a049;
+          }
+
+        label{
+            padding: 12px 12px 12px 0px;
+            display: inline-block;
+        }
+
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+
+        .col-25{
+            float: left;
+            width:  25%;
+            margin-top: 6px;
+        }
+
+        .col-75{
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        
+        @media screen and (max-width: 600px) 
+        {
+            .col-25, .col-75,input[type=submit]  {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form action="">
+            <div class="row">
+                <div class="col-25">
+                    <label for="f-name">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="f-name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="l-name">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="l-name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="usa">USA</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="india">India</option>
+                        <option value="afghanistan">Afghanistan</option>
+                        <option value="chiana">Chiana</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea name="message" id=""></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" style="margin-top: 10px;">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
